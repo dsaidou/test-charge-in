@@ -8,11 +8,11 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import './CardStat.css'
-import { Box, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
+
 export default function CardStat() {
-    const [yearStat, setYearstat] = useState([
+    const [yearStat] = useState([
         {name:'Installateurs partenaires inscrits', icon:<PersonIcon sx={{color:'#369C96'}}/>, count:78, percentage:2, value:false, id:nanoid()},
         {name:'Abonnements en cours', icon:<PieChartIcon sx={{color:'#369C96'}}/>, count:261, percentage:2, subTitle:"Nombre d'abonnements", subCount:22, value: false, id:nanoid()},
         {name:'Devis réalisés', icon:<FolderIcon  sx={{color:'#369C96'}}/>, count:105, percentage:2,subCount1:'##',subCount2:'##', value: false, id:nanoid()},

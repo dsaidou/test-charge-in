@@ -1,10 +1,9 @@
-import MenuIcon from '@mui/icons-material/Menu';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { nanoid } from 'nanoid'
 import { useState } from 'react';
 
 export default function HeaderProfil() {
-    const [mainUser, setMainUser] = useState({
+    const [mainUser] = useState({
         name: 'Prénom',
         lastName: 'Nom',
         username: 'P',

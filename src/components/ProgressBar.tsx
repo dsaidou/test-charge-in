@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid'
 import { useState } from 'react'
 
 export default function ProgressBar() {
-    const [statistic, setStatistic] =useState([
+    const [statistic] =useState([
         { name: '50 partenaires', value: 76, state: 'En cours', id:nanoid()},
         { name: '100 installateurs', value: 45, state: 'En cours', id:nanoid()},
         { name: '200 installations', value: 100, state: 'Complété ', id:nanoid()}

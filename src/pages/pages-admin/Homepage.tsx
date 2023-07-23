@@ -43,7 +43,7 @@ export default function Homepage() {
                   <ExpandMoreIcon sx={{color: '#FFFFFF',cursor:'pointer', border:'#000000'}}/>)}
                 disableUnderline
                 variant='standard'
-                defaultValue={'Cette année'}
+                defaultValue={inputValue}
                 onChange={handleChange}
                 sx={{
                   color:'#FFFFFF',

@@ -17,7 +17,7 @@ function Login() {
   const [isHidden, setIsHidden] = useState(true);
   const [values, setvalues] = useState({mail: '', password: ''});
   const [isSubmit, setIsSubmit] = useState(true);
-  const [errors, setErrors] = useState< errorType>({ mail : '', password:''});
+  const [errors] = useState< errorType>({ mail : '', password:''});
   
   const navigate = useNavigate()
 

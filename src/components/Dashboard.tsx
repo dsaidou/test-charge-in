@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { nanoid } from 'nanoid';
 
 export default function Dashboard() {
-    const [trimestre, setTrimestre] = useState([
+    const [trimestre] = useState([
         {name:'1er trimestre', id: nanoid()}, 
         {name:'2ème trimestre', id: nanoid()}, 
         {name:'3ème trimestre', id: nanoid()}, 

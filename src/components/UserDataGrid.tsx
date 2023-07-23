@@ -12,7 +12,7 @@ const columns: GridColDef[] = [
   { field: 'Devis', headerName: 'Devis', headerClassName: 'grid-header', flex:1, headerAlign: 'center', align:'center'},
   { field: 'Etape', headerName: 'Etape',  headerClassName: 'grid-header', flex:1, headerAlign: 'center', align:'center'},
   { field: 'id', headerName: 'id', headerClassName: 'grid-header', flex:1, headerAlign: 'center', align:'center'},
-  { field: 'actions', headerName: 'Actions', headerClassName: 'grid-header', width:150, headerAlign: 'right', align:'right', renderCell: (params)=>( <UserActions {...params} />)},
+  { field: 'actions', headerName: 'Actions', headerClassName: 'grid-header', width:150, headerAlign: 'right', align:'right', renderCell: ()=>( <UserActions/>)},
 ];
 
 
@@ -36,7 +36,7 @@ export default function UserDataGrid() {
     )
   }
 
-  const [columnVisibilityModel, setColumnVisibilityModel] = useState({
+  const [columnVisibilityModel] = useState({
       id: false,
     });
 

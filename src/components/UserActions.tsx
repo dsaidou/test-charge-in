@@ -3,7 +3,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';``
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 
-export const UserActions = ({...params}) => {
+export const UserActions = () => {
 
     return(
     <Box>
